@@ -1,0 +1,34 @@
+# {{ title }}
+
+````{tabs}
+```{tab} Abstract
+{{ abstract }}
+```
+```{tab} Key Insights
+{% for insight in key_insights %}
+- {{ insight }}
+{% endfor %}
+```
+```{tab} Deep Dive
+### Core Concepts
+
+{{ deep_dive.core_concepts }}
+{% if deep_dive.equations %}
+
+### Equations
+
+{% for eq in deep_dive.equations %}
+$${{ eq }}$$
+
+{% endfor %}
+{% endif %}
+### Examples & Applications
+
+{{ deep_dive.examples }}
+```
+```{tab} Video
+[![Watch on YouTube](https://img.youtube.com/vi/{{ video_id }}/maxresdefault.jpg)](https://www.youtube.com/watch?v={{ video_id }})
+
+[Watch on YouTube ↗](https://www.youtube.com/watch?v={{ video_id }})
+```
+````

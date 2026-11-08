@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Server",
+    "host": "jm3",
+    "timestamp": "2026-04-18T12:42:58",
+    "reachable": true,
+    "models": [
+      {
+        "model": ":",
+        "size_gb": 0.0,
+        "error": "Could not parse verbose output \u2014 is this model working?"
+      },
+      {
+        "model": "|_.:",
+        "size_gb": 0.0,
+        "error": "Could not parse verbose output \u2014 is this model working?"
+      },
+      {
+        "model": "zsh:1:",
+        "size_gb": 0.0,
+        "error": "Could not parse verbose output \u2014 is this model working?"
+      }
+    ],
+    "ollama_version": "._______.________._______ \n: .____/|    ___/: ____  |\n| : _/\\ |___    \\|    :  |\n|   /  \\|       /|   |___|\n|_.: __/|__:___/ |___|    \n   :/      :              \n\n\nzsh:1: command not found: ollama"
+  }
+]

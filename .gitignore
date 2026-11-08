@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Jupyter Book build output
+book/_build/
+_build/
+
+# Generated chapter files — commit these only when you want CI to skip re-summarizing
+# book/chapters/
+
+# Generated TOC — re-created by the pipeline
+# book/_toc.yml
+
+# Environment
+.env
+
+# macOS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/

@@ -1,0 +1,15 @@
+backend: ollama
+ollama:
+  host: jm4
+  model: qwen3.5:latest
+anthropic:
+  model: claude-sonnet-4-6
+videos:
+- url: https://www.youtube.com/watch?v=p_di4Zn4wz4
+  title_override: null
+- url: https://www.youtube.com/watch?v=aircAruvnKk
+  title_override: null
+- url: https://www.youtube.com/watch?v=Q6Gw08pwhws
+  title_override: null
+- url: https://www.youtube.com/watch?v=8X1x9RLaaxc
+  title_override: null

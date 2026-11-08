@@ -1,0 +1,23 @@
+title: Physics Video Notes
+author: ""
+logo: ""
+
+execute:
+  execute_notebooks: "off"
+
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - dollarmath
+
+sphinx:
+  extra_extensions:
+    - sphinx_tabs.tabs
+  config:
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    mathjax3_config:
+      tex:
+        inlineMath: [["\\(", "\\)"], ["$", "$"]]
+        displayMath: [["\\[", "\\]"], ["$$", "$$"]]
+    html_theme_options:
+      use_download_button: false
