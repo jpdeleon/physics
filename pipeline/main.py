@@ -116,7 +116,11 @@ def cmd_run(args: argparse.Namespace) -> None:
     else:
         print(f"  model: {anthropic_model}")
 
-    tunnel_ctx = ssh_tunnel(tunnel_host) if tunnel_host else contextlib.nullcontext()
+    # Only open the tunnel if some video will actually be summarized (lets CI run with committed chapters)
+    needs_work = not args.skip_existing or any(
+        not (CHAPTERS_DIR / f"{_slug(extract_video_id(e['url']))}.md").exists() for e in entries
+    )
+    tunnel_ctx = ssh_tunnel(tunnel_host) if tunnel_host and needs_work else contextlib.nullcontext()
     chapter_slugs: list[str] = []
 
     with tunnel_ctx:
